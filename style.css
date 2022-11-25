@@ -1,0 +1,444 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1em;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ff4949;
+}
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    height:auto!important;
+}
+
+
+/*Styling the navigation bar*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+}
+.logo {
+    height: 18%;
+    width: 18%;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    
+}
+.navlinks {
+    list-style: none;
+    text-align: center;
+}
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navlinks li a,#dropdown {
+    color:rgb(220, 220, 220);
+    text-decoration: none;
+    transition-duration: 0.15s;
+
+}
+.navlinks li a:hover,#dropdown:hover {
+    color:rgb(255, 255, 255);
+    transition-duration: 0.15s;
+}
+
+/*Creating a dropdown list for the navigation bar*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownlist {
+    position:absolute;
+    display: none;
+    z-index: 1;
+    min-width: 100px;
+    background-color: #f93838;
+    opacity: 90%;
+    font-size: smaller;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    right: 0;
+}
+.dropdownlist a {
+    display: block;
+    padding: 15px 8px;
+    text-decoration: none;
+}
+.dropdown:hover .dropdownlist {
+    display: block;
+}
+.dropbtn {
+    background-color: #ff4949;
+    border-style: none;
+    padding: 4px 6px;
+    margin-bottom: 8px;
+    color: rgb(220, 220, 220);;
+}
+.dropbtn:hover {
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 2px;
+    transition-duration: 0.15s;
+}
+
+/*Styling the footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+
+.sociallinks {
+    display: inline-block;
+    list-style: none;
+}
+.sociallinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.sociallinks p {
+    padding: 15px 0px;
+}
+.socialicon {
+    height: 48px;
+    width: 48px;
+}
+input {
+    border-style: hidden;
+    border-width: thin;
+    border-radius: 2px;
+    height: 35px;
+    
+    padding: 5px 10px;
+    background-color: white;
+}
+input:focus {
+    outline: none;
+    color: black;
+}
+.signup button {
+    font-family: "Montserrat", sans-serif;
+    border-style: none;
+    border-radius: 2px;
+    padding: 9px 10px;
+    background-color: #ff4949;
+}
+.signup button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+form p {
+    padding: 20px 0;
+}
+.footer-flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-flex-item {
+    display:flex;
+    flex-direction: column;
+}
+
+/*Styling the featured*/
+div.featured {
+    background-image: url(media/featured-gif.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 700px;
+    width: 100%;
+
+    display: inline-block;
+
+    margin-bottom: 50px;
+
+}
+.featured-container {
+    display: inline-block;
+    text-align: left;
+    margin-top: 400px;
+    height: auto;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.featured-container img {
+    display: inline-block;
+    text-align: left;
+    height: auto;
+    width: 100%;
+}
+.featured-container p {
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.featured-container p a {
+    color: red;
+    font-size: 1.05em;
+}
+.featured-container p a:hover {
+    color: rgb(255, 128, 128);
+    transition-duration: 0.15s;
+}
+
+/*Styling the tour*/
+.tour-flexitem, .tour-nesteditem {
+    list-style: none;
+}
+.tour-nesteditem {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.tour-nesteditem:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition-duration: 0.08s;
+}
+.tour-nesteditem li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tour-flexitem {
+    display: block;
+    border-bottom: 1px solid white;
+}
+#tour-timedate {
+    color: black
+}
+#tour-country {
+    color: black;
+}
+.tour-nesteditem li button {
+    background-color: white;
+    color: #f44646;
+    border-radius: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-style: none;
+}
+.tour-nesteditem li button:hover {
+    cursor: pointer;
+}
+/*Reusable flex properties*/
+.common-flexcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.sectionheader {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+#sectionheader {
+    font-size: 1.2em;
+}
+
+/*Styling the member gallary*/
+.gallary-flexitem {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.gallary-flexitem li {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    font-size: smaller;
+    text-align: center;
+}
+.gallary-flexitem li a {
+    text-decoration: none;
+}
+.gallary-flexitem li img {
+    height: 290px;
+    width: 290px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.gallary-flexitem li:hover {
+    transform: scale(105%);
+}
+
+/*member html*/
+.member-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color:rgba(0, 0, 0, 0.1)
+}
+.member-ig, .member-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.member-info {
+    width: 400px;
+}
+.member-info h5 {
+    margin-bottom: 15px;
+}
+.backbtn {
+    display: block;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 35px;
+}
+.backbtn a button {
+    margin-right: 100px;
+    border-style: none;
+    background-color: white;
+    color: #f44646;
+    border-radius: 2px; 
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.backbtn a button:hover {
+    cursor: pointer;
+}
+
+/*catalogue html*/
+.cat-featuredalbum {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 140px;
+    padding: 50px;
+    border-radius: 5px;
+    width: 600px;
+    margin: auto;
+    margin-top: 170px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.featured-item {
+    margin: 10px;
+}
+.featured-item p{
+    margin-top: 70px;
+}
+.featured-item img {
+    height: 300px;
+    width: 300px;
+}
+.cat-flex-item {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cat-flex-item li {
+    margin: 40px;
+}
+.cat-flex-item li img {
+    width: 250px;
+    height: 250px;
+}
+.cat-flex-item a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 920px) {
+    div.featured {
+        height: 450px;
+        width: 100%;
+    }
+    .featured-container {
+        margin-top: 200px;
+        width: 75%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer-flexcontainer {
+        justify-content: center;
+    }
+    .footer-flex-item {
+        flex-direction: column;
+    }
+    
+    header{
+        flex-direction: column;
+    }
+    .logo {
+        height: 40%;
+        width: 40%;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+    nav {
+        align-self: center;
+    }
+    .navlinks li {
+        padding: 0px 10px;
+    }
+    .tour-nesteditem {
+        width: 700px;
+    }
+
+    .gallary-flexitem {
+        flex-direction: column;
+    }
+    .gallary-flexitem li img {
+        max-width: 75%;
+        height: auto;
+    }
+    .featured-item img {
+        height: 180px;
+        width: 180px;
+    }
+    .cat-featuredalbum {
+        margin-top: 100px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .tour-nesteditem {
+        width: 230px;
+        flex-direction: column;
+    }
+    .tour-nesteditem li {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .member-container {
+        flex-direction: column;
+    }
+    .member-ig {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
