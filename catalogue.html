@@ -7,6 +7,7 @@
         <title>ID_Assignment1</title>
         <link href="normalize.css" rel="stylesheet" type="text/css" />
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -29,11 +30,13 @@
         <div class="featured">
             <div class="cat-featuredalbum">
                 <div class="featured-item">
-                    <a href="#"><img src="media/beauty-in-deathdeluxe-album.png" title="" alt=""></a>
+                    <a href="https://open.spotify.com/album/4tb9KRJe8FNjYIRbvtGTG5?si=R7BofEe4R7C1PhvpFWEGDg"><img src="media/beauty-in-deathdeluxe-album.png" title="Beauty In Death (Deluxe)" alt="Beauty In Death (Deluxe)"></a>
                 </div>
                 <div class="featured-item">
                     <h5>Beauty In Death(Deluxe)</h5>
                     <p>3.5.2022</p>
+                    <a class="featured-item-link" href="https://fanlink.to/beautyindeath">STREAM</a>
+                    <a class="featured-item-link" href="https://beautyindeathc3.com/">LISTEN</a>
                 </div>
             </div>
         </div>
@@ -42,16 +45,16 @@
         </div>
         <div class="common-flexcontainer">
             <ul class="cat-flex-item">
-                <li><a href ="#"><img src="media/beauty-in-death-album.jpg" title="Beauty In Death" alt="Beauty In Death"></a></li>
-                <li><a href ="#"><img src="media/phases-album.png" title="PHASES" alt="PHASES"></a></li>
-                <li><a href ="#"><img src="media/dont-try-this-album.jpg" title="Don't Try This" alt="Don't Try This"></a></li>
-                <li><a href ="#"><img src="media/paradise-album.jpg" title="Paradise" alt="Paradise"></a></li>
-                <li><a href ="#"><img src="media/chase-atlantic-album.jpg" title="Chase Atlantic" alt="Chase Atlantic"></a></li>
-                <li><a href ="#"><img src="media/p3-album.jpg" title="Part Three" alt="Part Three"></a></li>
-                <li><a href ="#"><img src="media/p2-album.jpg" title="Part Two" alt="Part Two"></a></li>
-                <li><a href ="#"><img src="media/p1-album.jpg" title="Part One" alt="Part One"></a></li>
-                <li><a href ="#"><img src="media/nostalgia-album.jpg" title="Nostalgia" alt="Nostalgia"></a></li>
-                <li><a href ="#"><img src="media/dal-album.jpg" title="Dalliance" alt="Dalliance"></a></li>
+                <li><a href ="https://open.spotify.com/album/52abbUrmRs1bmdVp01U9e2?si=4_yeZY0_SXmOBml7qQY6EQ"><img src="media/beauty-in-death-album.jpg" title="Beauty In Death" alt="Beauty In Death"></a></li>
+                <li><a href ="https://open.spotify.com/album/22DL6IRGNYNenKej7aw8pO?si=uxbWo2uFTJSC318aYlV66w"><img src="media/phases-album.png" title="PHASES" alt="PHASES"></a></li>
+                <li><a href ="https://open.spotify.com/album/6yvyK1eFy7bUVN7EBWXWgg?si=rTVQU1UjT76vewpHIGXyrA"><img src="media/dont-try-this-album.jpg" title="Don't Try This" alt="Don't Try This"></a></li>
+                <li><a href ="https://open.spotify.com/album/7agIpPnZXBhJQcWHAvdQFx?si=EETEu-hjQUe8-XVMwARx-g"><img src="media/paradise-album.jpg" title="Paradise" alt="Paradise"></a></li>
+                <li><a href ="https://open.spotify.com/album/7C8uqokvE67UOlu1TiEYMd?si=6E07YQZeQrSyR1X_4Yu9wA"><img src="media/chase-atlantic-album.jpg" title="Chase Atlantic" alt="Chase Atlantic"></a></li>
+                <li><a href ="https://open.spotify.com/album/6WIsfpqYUu84WVGkjxMtdr?si=sXrrekKQS56nOwXwzi3pfQ"><img src="media/p3-album.jpg" title="Part Three" alt="Part Three"></a></li>
+                <li><a href ="https://open.spotify.com/album/6fmeMgFbGjtfbAEhqZ7C4s?si=IMJPk-3FQCymWEY5bgyPuA"><img src="media/p2-album.jpg" title="Part Two" alt="Part Two"></a></li>
+                <li><a href ="https://open.spotify.com/album/5TxFJxig3GYqMq6oroffmA?si=mPAQc_AaSXGKVMis_fY_FQ"><img src="media/p1-album.jpg" title="Part One" alt="Part One"></a></li>
+                <li><a href ="https://open.spotify.com/album/4FdPaL1MvZtioq0Uf74Jau?si=w2qcioufReaEG5KhdxSZTg"><img src="media/nostalgia-album.jpg" title="Nostalgia" alt="Nostalgia"></a></li>
+                <li><a href ="https://open.spotify.com/album/2G7wMViuduvWuyCT7pSWEA?si=cwt4th7UQ7Wsq5USq9Mc_A"><img src="media/dal-album.jpg" title="Dalliance" alt="Dalliance"></a></li>
             </ul>
         </div>
         <footer class="footer-flexcontainer">
@@ -66,10 +69,10 @@
                 </nav>
             </div>
             <div class="footer-flex-item">
-                <form class="signup" action="#" method="POST">
+                <form class="signup" onsubmit="return false">
                     <p>SIGN UP TO GET THE LATEST ON SALES, NEW RELEASES AND MORE…</p>
-                    <input type="email" placeholder="Enter email">
-                    <button>SIGN UP</button>
+                    <input id="email" type="email" placeholder="Enter email">
+                    <button onclick="submissionmessage()">SIGN UP</button>
                 </form>
             </div>
         </footer>

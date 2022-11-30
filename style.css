@@ -1,6 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@670&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@570&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -170,8 +172,6 @@ div.featured {
 
     display: inline-block;
 
-    margin-bottom: 50px;
-
 }
 .featured-container {
     display: inline-block;
@@ -204,6 +204,18 @@ div.featured {
 }
 
 /*Styling the tour*/
+.sectionsubheader span a {
+    color: black;
+}
+.tour-sh-2 {
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.tour-sh-1 {
+    font-size: 1.15em;
+    color: black;
+}
 .tour-flexitem, .tour-nesteditem {
     list-style: none;
 }
@@ -230,15 +242,23 @@ div.featured {
     border-bottom: 1px solid white;
 }
 #tour-timedate {
-    color: black
+    color: black;
+    font-family: "Heebo", sans-serif;
+}
+#tour-venue {
+    color: white;
+    font-family: "Heebo", sans-serif;
 }
 #tour-country {
     color: black;
+    font-family: "Heebo", sans-serif;
+    text-align: center;
 }
 .tour-nesteditem li button {
+    font-family: "Heebo", sans-serif;
     background-color: white;
     color: #f44646;
-    border-radius: 2px;
+    border-radius: 1px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 45px;
@@ -260,7 +280,15 @@ div.featured {
     padding: 30px;
 }
 #sectionheader {
-    font-size: 1.2em;
+    font-size: 1.4em;
+}
+.sectionsubheader {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+.sectionsubheader span{
+    display: block;
+    margin-left: 30px;
 }
 
 /*Styling the member gallary*/
@@ -276,6 +304,9 @@ div.featured {
     margin-bottom: 60px;
     font-size: smaller;
     text-align: center;
+
+    overflow: hidden;
+
 }
 .gallary-flexitem li a {
     text-decoration: none;
@@ -286,8 +317,9 @@ div.featured {
     max-width: 100%;
     margin-bottom: 30px;
 }
-.gallary-flexitem li:hover {
-    transform: scale(105%);
+.gallary-flexitem li img:hover {
+    transition-duration: 0.25s;
+    transform: scale(103%);
 }
 
 /*member html*/
@@ -301,13 +333,20 @@ div.featured {
 .member-ig, .member-info {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .member-info {
-    width: 400px;
+    display: block;
+    width: 450px;
 }
 .member-info h5 {
+    font-size: 1.45em;
     margin-bottom: 15px;
+}
+.member-info p {
+    margin-right: 80px;
+    font-size: 1.2em;
 }
 .backbtn {
     display: block;
@@ -318,15 +357,19 @@ div.featured {
 .backbtn a button {
     margin-right: 100px;
     border-style: none;
-    background-color: white;
-    color: #f44646;
-    border-radius: 2px; 
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 1px; 
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
     padding-right: 20px;
+    border-style: solid;
+    border-color: white;
 }
 .backbtn a button:hover {
+    color: black;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -353,6 +396,21 @@ div.featured {
     height: 300px;
     width: 300px;
 }
+.featured-item-link {
+    text-decoration: none;
+    display:block;
+    font-size: 1.7em;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+}
+.featured-item-link:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+    transition-duration: 0.25s;
+}
 .cat-flex-item {
     list-style: none;
     display: flex;
@@ -365,13 +423,166 @@ div.featured {
 .cat-flex-item li {
     margin: 40px;
 }
+.cat-flex-item li:hover {
+    box-shadow: 8px 8px 12px 10px rgba(0, 0, 0, 0.2);
+}
 .cat-flex-item li img {
     width: 250px;
     height: 250px;
 }
-.cat-flex-item a {
-    text-decoration: none;
+
+/*Styling the merch html*/
+.merch-flexitem, .merch-nestedflexitem {
+    list-style: none;
 }
+.merch-flexitem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.merch-flexitem li {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.merch-nestedflexitem {
+    margin-bottom: 60px;
+}
+.merch-nestedflexitem li {
+    display: block;
+    text-align: center;
+}
+.merch-pic img {
+    width: 230px;
+    height: 230px;
+}
+.merch-name {
+    width: 230px;
+    height: auto;
+    ;
+}
+.add-to-cart button img {
+    height: 20px;
+    width: 20px;
+}
+.add-to-cart button {
+    border-style: none;
+    padding-top: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    margin-top: 4px;
+    background-color: rgb(78, 78, 255);
+}
+.add-to-cart button:hover {
+    cursor: pointer;
+    background-color: rgb(58, 58, 255);
+    transition-duration: 0.15s;
+}
+/* */
+.cart {
+    background-color: rgba(255,73,73, 0.9);
+    display: none;
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    border-bottom: 0;
+    z-index: 10;
+    overflow-y: auto;
+    height: 300px;
+    width: 500px;
+}
+.cartsummary {
+    background-color: rgba(240, 73, 73, 0.9);
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    border-top: 2px solid #f1f1f1;
+    
+    
+    z-index: 10;
+    height: 70px;
+    width: 500px;
+}
+#cart-header {
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#itemqty, #grandtotal{
+    font-size: 1.15em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cartitem {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.cartitem li {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+li.itemname {
+    margin-left: 0;
+}
+li.removeitem {
+    margin: 0;  
+}
+li.removeitem button {
+    
+    margin-top: 16px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+li.removeitem button:hover {
+    color: rgb(215, 215, 215);
+}
+button.toggleOffCart, button.toggleCart {
+    background-color: rgb(78, 78, 255);
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-style: none;
+}
+button.toggleOffCart {
+    position: fixed;
+    border-bottom-right-radius: 30px;
+    width: 48px;
+    font-size: 1.7em;
+}
+button.toggleCart {
+    border-radius: 25px;
+    height: 50px;
+    width: 90px;
+    margin-right: 80px;
+}
+button.toggleOffCart:hover, button.toggleCart:hover {
+    background-color: rgb(58, 58, 255);
+    transition-duration: 0.12s;
+    cursor: pointer;
+}
+.cart-section {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: right;
+}
+
+
+
 @media only screen and (max-width: 920px) {
     div.featured {
         height: 450px;
@@ -416,16 +627,39 @@ div.featured {
         max-width: 75%;
         height: auto;
     }
+    .member-info {
+        text-align: center;
+        width: 350px;
+    }
+    .member-info p {
+        margin: 0;
+    }
+    .backbtn {
+        text-align: center;
+    }
+    .backbtn a button{
+        margin-right: 0;
+    }
     .featured-item img {
         height: 180px;
         width: 180px;
     }
     .cat-featuredalbum {
-        margin-top: 100px;
+        margin-top: 60px;
         width: 400px;
     }
+    .featured-item p{
+        margin-top: 30px;
+    }
+    .featured-item-link {
+        font-size: 1.2em;
+
+    }
+    .cart , .cartsummary {
+        width: 350px;
+    }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .tour-nesteditem {
         width: 230px;
         flex-direction: column;
@@ -436,6 +670,7 @@ div.featured {
     }
     .member-container {
         flex-direction: column;
+        justify-content: center;
     }
     .member-ig {
         margin-left: auto;
