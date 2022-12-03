@@ -1,0 +1,78 @@
+/*member html*/
+.member-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color:rgba(0, 0, 0, 0.1)
+}
+.member-ig, .member-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.member-info {
+    display: block;
+    width: 450px;
+}
+.member-info h5 {
+    font-size: 1.45em;
+    margin-bottom: 15px;
+}
+.member-info p {
+    margin-right: 80px;
+    font-size: 1.2em;
+}
+.backbtn {
+    display: block;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 35px;
+}
+.backbtn button {
+    margin-right: 100px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 1px; 
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-style: solid;
+    border-color: white;
+}
+.backbtn button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 920px) {
+    .member-info {
+        text-align: center;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .member-info p {
+        margin: 0;
+    }
+    .backbtn {
+        text-align: center;
+    }
+    .backbtn button{
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .member-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .member-ig {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

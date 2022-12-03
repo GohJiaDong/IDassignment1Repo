@@ -1,0 +1,191 @@
+/*Styling the merch html*/
+.merch-flexitem, .merch-nestedflexitem {
+    list-style: none;
+}
+.merch-flexitem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.merch-flexitem li {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.merch-nestedflexitem {
+    margin-bottom: 60px;
+}
+.merch-nestedflexitem li {
+    display: block;
+    text-align: center;
+}
+.merch-pic img {
+    width: 230px;
+    height: 230px;
+}
+.merch-name {
+    width: 230px;
+    height: auto;
+    ;
+}
+.add-to-cart button img {
+    height: 20px;
+    width: 20px;
+}
+.add-to-cart button {
+    border-style: none;
+    padding-top: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    margin-top: 4px;
+    background-color: rgb(78, 78, 255);
+}
+.add-to-cart button:hover {
+    cursor: pointer;
+    background-color: rgb(58, 58, 255);
+    transition-duration: 0.15s;
+}
+/*Styling the cart*/
+.cart {
+    background-color: rgba(255,73,73, 0.9);
+    display: none;
+    position: fixed;
+    bottom: 105px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    border-bottom: 0;
+    z-index: 10;
+    overflow-y: auto;
+    height: 300px;
+    width: 500px;
+}
+.cartsummary {
+    background-color: rgba(240, 73, 73, 0.9);
+    display: none;
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    border-top: 2px solid #f1f1f1;
+    
+    
+    z-index: 10;
+    height: 125px;
+    width: 500px;
+}
+.itemnameCH, .itempriceCH {
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-bottom: 55px;
+}
+#itemqty, #grandtotal{
+    font-size: 1.15em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.checkout img {
+    height: 50px;
+    width: auto;
+}
+.checkout {
+    display: block;
+    padding-left: 209px;
+    padding-right: 209px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    border-radius: 25px;
+    background-color: rgb(52, 155, 52);
+}
+.checkout:hover {
+    transition-duration: 0.15s;
+    cursor: pointer;
+    background-color: rgb(52, 135, 52);
+}
+.cartitem {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.cartitem li {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+li.itemname {
+    margin-left: 0;
+    margin-bottom: 55px;
+}
+li.removeitem {
+    margin: 0;  
+}
+li.removeitem button {
+    
+    margin-top: 16px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+li.removeitem button:hover {
+    color: rgb(215, 215, 215);
+}
+button.toggleOffCart, button.toggleCart {
+    color: rgb(210, 210, 210);;
+    background-color: rgb(78, 78, 255);
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-style: none;
+}
+button.toggleOffCart {
+    position: fixed;
+    border-bottom-right-radius: 27px;
+    width: 52px;
+    text-align: center;
+    font-size: 1.1em;
+}
+button.toggleCart {
+    border-radius: 25px;
+    height: 50px;
+    width: 90px;
+    margin-right: 80px;
+}
+button.toggleOffCart:hover, button.toggleCart:hover {
+    color: #ff4949;
+    background-color: rgb(58, 58, 255);
+    transition-duration: 0.12s;
+    cursor: pointer;
+}
+.cart-section {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: right;
+}
+
+@media only screen and (max-width: 920px) {
+    .cart , .cartsummary {
+        width: 350px;
+    }
+    .cartsummary {
+        height: 150px;
+    }
+    li.itemname {
+        margin-bottom: 80px;
+    }
+    .checkout {
+        padding-left: 140px;
+        padding-right: 140px;
+        margin-top: 30px;
+    }
+}

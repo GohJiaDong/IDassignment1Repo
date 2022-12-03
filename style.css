@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@670&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@570&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 * {
@@ -47,7 +49,9 @@ nav {
     display: inline-block;
     padding: 0px 20px;
 }
-.navlinks li a,#dropdown {
+.navlinks li a,.dropdown {
+    font-size: 1.3em;
+    font-family: 'Bebas Neue', sans-serif;
     color:rgb(220, 220, 220);
     text-decoration: none;
     transition-duration: 0.15s;
@@ -108,7 +112,9 @@ footer {
     justify-content: space-between;
     padding: 25px 30px;
 }
-
+.follow {
+    padding-bottom: 10px;
+}
 .sociallinks {
     display: inline-block;
     list-style: none;
@@ -138,11 +144,11 @@ input:focus {
     color: black;
 }
 .signup button {
-    font-family: "Montserrat", sans-serif;
     border-style: none;
     border-radius: 2px;
     padding: 9px 10px;
     background-color: #ff4949;
+    font-size: 1.1em;
 }
 .signup button:hover {
     cursor: pointer;
@@ -158,117 +164,10 @@ form p {
 .footer-flex-item {
     display:flex;
     flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.25em;
 }
-
-/*Styling the featured*/
-div.featured {
-    background-image: url(media/featured-gif.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    height: 700px;
-    width: 100%;
-
-    display: inline-block;
-
-}
-.featured-container {
-    display: inline-block;
-    text-align: left;
-    margin-top: 400px;
-    height: auto;
-    width: 40%;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.featured-container img {
-    display: inline-block;
-    text-align: left;
-    height: auto;
-    width: 100%;
-}
-.featured-container p {
-    padding-left: 10px;
-    padding-bottom: 15px;
-}
-.featured-container p a {
-    color: red;
-    font-size: 1.05em;
-}
-.featured-container p a:hover {
-    color: rgb(255, 128, 128);
-    transition-duration: 0.15s;
-}
-
-/*Styling the tour*/
-.sectionsubheader span a {
-    color: black;
-}
-.tour-sh-2 {
-    color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.tour-sh-1 {
-    font-size: 1.15em;
-    color: black;
-}
-.tour-flexitem, .tour-nesteditem {
-    list-style: none;
-}
-.tour-nesteditem {
-    width: 1000px;
-    display: flex;
-    flex-direction: row;
-    border-top: 1px solid white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-.tour-nesteditem:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    transition-duration: 0.08s;
-}
-.tour-nesteditem li {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.tour-flexitem {
-    display: block;
-    border-bottom: 1px solid white;
-}
-#tour-timedate {
-    color: black;
-    font-family: "Heebo", sans-serif;
-}
-#tour-venue {
-    color: white;
-    font-family: "Heebo", sans-serif;
-}
-#tour-country {
-    color: black;
-    font-family: "Heebo", sans-serif;
-    text-align: center;
-}
-.tour-nesteditem li button {
-    font-family: "Heebo", sans-serif;
-    background-color: white;
-    color: #f44646;
-    border-radius: 1px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
-    border-style: none;
-}
-.tour-nesteditem li button:hover {
-    cursor: pointer;
-}
-/*Reusable flex properties*/
+/*Reusable properties*/
 .common-flexcontainer {
     display: flex;
     justify-content: center;
@@ -279,7 +178,8 @@ div.featured {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
-#sectionheader {
+.sheader {
+    font-family: 'Zen Dots', cursive;
     font-size: 1.4em;
 }
 .sectionsubheader {
@@ -290,296 +190,21 @@ div.featured {
     display: block;
     margin-left: 30px;
 }
+div.featured {
+    background-image: url(media/featured2-gif.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-/*Styling the member gallary*/
-.gallary-flexitem {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.gallary-flexitem li {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 60px;
-    font-size: smaller;
-    text-align: center;
+    height: 700px;
+    width: 100%;
 
-    overflow: hidden;
+    display: inline-block;
 
 }
-.gallary-flexitem li a {
-    text-decoration: none;
-}
-.gallary-flexitem li img {
-    height: 290px;
-    width: 290px;
-    max-width: 100%;
-    margin-bottom: 30px;
-}
-.gallary-flexitem li img:hover {
-    transition-duration: 0.25s;
-    transform: scale(103%);
-}
 
-/*member html*/
-.member-container {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    background-color:rgba(0, 0, 0, 0.1)
-}
-.member-ig, .member-info {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.member-info {
-    display: block;
-    width: 450px;
-}
-.member-info h5 {
-    font-size: 1.45em;
-    margin-bottom: 15px;
-}
-.member-info p {
-    margin-right: 80px;
-    font-size: 1.2em;
-}
-.backbtn {
-    display: block;
-    text-align: right;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding-bottom: 35px;
-}
-.backbtn a button {
-    margin-right: 100px;
-    border-style: none;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    border-radius: 1px; 
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    border-style: solid;
-    border-color: white;
-}
-.backbtn a button:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
 
-/*catalogue html*/
-.cat-featuredalbum {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 140px;
-    padding: 50px;
-    border-radius: 5px;
-    width: 600px;
-    margin: auto;
-    margin-top: 170px;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.featured-item {
-    margin: 10px;
-}
-.featured-item p{
-    margin-top: 70px;
-}
-.featured-item img {
-    height: 300px;
-    width: 300px;
-}
-.featured-item-link {
-    text-decoration: none;
-    display:block;
-    font-size: 1.7em;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-style: solid;
-}
-.featured-item-link:hover {
-    background-color: white;
-    color: black;
-    border-color: white;
-    transition-duration: 0.25s;
-}
-.cat-flex-item {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.cat-flex-item li {
-    margin: 40px;
-}
-.cat-flex-item li:hover {
-    box-shadow: 8px 8px 12px 10px rgba(0, 0, 0, 0.2);
-}
-.cat-flex-item li img {
-    width: 250px;
-    height: 250px;
-}
 
-/*Styling the merch html*/
-.merch-flexitem, .merch-nestedflexitem {
-    list-style: none;
-}
-.merch-flexitem {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.merch-flexitem li {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.merch-nestedflexitem {
-    margin-bottom: 60px;
-}
-.merch-nestedflexitem li {
-    display: block;
-    text-align: center;
-}
-.merch-pic img {
-    width: 230px;
-    height: 230px;
-}
-.merch-name {
-    width: 230px;
-    height: auto;
-    ;
-}
-.add-to-cart button img {
-    height: 20px;
-    width: 20px;
-}
-.add-to-cart button {
-    border-style: none;
-    padding-top: 2px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 4px;
-    margin-top: 4px;
-    background-color: rgb(78, 78, 255);
-}
-.add-to-cart button:hover {
-    cursor: pointer;
-    background-color: rgb(58, 58, 255);
-    transition-duration: 0.15s;
-}
-/* */
-.cart {
-    background-color: rgba(255,73,73, 0.9);
-    display: none;
-    position: fixed;
-    bottom: 75px;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    border-bottom: 0;
-    z-index: 10;
-    overflow-y: auto;
-    height: 300px;
-    width: 500px;
-}
-.cartsummary {
-    background-color: rgba(240, 73, 73, 0.9);
-    display: none;
-    position: fixed;
-    bottom: 25px;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    border-top: 2px solid #f1f1f1;
-    
-    
-    z-index: 10;
-    height: 70px;
-    width: 500px;
-}
-#cart-header {
-    font-size: 1.2em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-#itemqty, #grandtotal{
-    font-size: 1.15em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.cartitem {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-.cartitem li {
-    text-align: center;
-    width: 150px;
-    height: 50px;
-    margin-left: 45px;
-    margin-right: 45px;
-}
-li.itemname {
-    margin-left: 0;
-}
-li.removeitem {
-    margin: 0;  
-}
-li.removeitem button {
-    
-    margin-top: 16px;
-    border-style: none;
-    background-color: rgba(0, 0, 0, 0);
-}
-li.removeitem button:hover {
-    color: rgb(215, 215, 215);
-}
-button.toggleOffCart, button.toggleCart {
-    background-color: rgb(78, 78, 255);
-    text-align: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-style: none;
-}
-button.toggleOffCart {
-    position: fixed;
-    border-bottom-right-radius: 30px;
-    width: 48px;
-    font-size: 1.7em;
-}
-button.toggleCart {
-    border-radius: 25px;
-    height: 50px;
-    width: 90px;
-    margin-right: 80px;
-}
-button.toggleOffCart:hover, button.toggleCart:hover {
-    background-color: rgb(58, 58, 255);
-    transition-duration: 0.12s;
-    cursor: pointer;
-}
-.cart-section {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding-bottom: 35px;
-    display: flex;
-    justify-content: right;
-}
 
 
 
@@ -587,12 +212,6 @@ button.toggleOffCart:hover, button.toggleCart:hover {
     div.featured {
         height: 450px;
         width: 100%;
-    }
-    .featured-container {
-        margin-top: 200px;
-        width: 75%;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
     .footer-flexcontainer {
         justify-content: center;
@@ -615,65 +234,5 @@ button.toggleOffCart:hover, button.toggleCart:hover {
     }
     .navlinks li {
         padding: 0px 10px;
-    }
-    .tour-nesteditem {
-        width: 700px;
-    }
-
-    .gallary-flexitem {
-        flex-direction: column;
-    }
-    .gallary-flexitem li img {
-        max-width: 75%;
-        height: auto;
-    }
-    .member-info {
-        text-align: center;
-        width: 350px;
-    }
-    .member-info p {
-        margin: 0;
-    }
-    .backbtn {
-        text-align: center;
-    }
-    .backbtn a button{
-        margin-right: 0;
-    }
-    .featured-item img {
-        height: 180px;
-        width: 180px;
-    }
-    .cat-featuredalbum {
-        margin-top: 60px;
-        width: 400px;
-    }
-    .featured-item p{
-        margin-top: 30px;
-    }
-    .featured-item-link {
-        font-size: 1.2em;
-
-    }
-    .cart , .cartsummary {
-        width: 350px;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .tour-nesteditem {
-        width: 230px;
-        flex-direction: column;
-    }
-    .tour-nesteditem li {
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }
-    .member-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .member-ig {
-        margin-left: auto;
-        margin-right: auto;
     }
 }
